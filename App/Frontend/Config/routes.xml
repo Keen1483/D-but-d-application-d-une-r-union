@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+  <route url="/" module="Accueil" action="index" />
+  
+  <route url="/news" module="News" action="index" />
+  <route url="/news-([0-9]+)\.html" module="News" action="show" vars="id"/>
+  <route url="/commenter-([0-9]+)\.html" module="News" action="insertComment" vars="news" />
+
+  <route url="/membre" module="Membre" action="index" />
+  <route url="/membre-([0-9]+)\.html" module="Membre" action="showMembre" vars="id"/>
+
+  <route url="/dette" module="Dette" action="index" />
+  <route url="/dette-([0-9]+)\.html" module="Dette" action="showDette" vars="id"/>
+</routes>
